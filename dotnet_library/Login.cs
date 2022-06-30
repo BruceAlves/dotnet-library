@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace dotnet_library
 {
-    public partial class Form1 : Form
+    public partial class btnLogin : Form
     {
-        public Form1()
+        public btnLogin()
         {
             InitializeComponent();
         }
 
+   
     }
 }
