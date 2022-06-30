@@ -3,3 +3,5 @@
 ################################################################################
 
 /dotnet_library/obj/Debug/net5.0-windows
+/dotnet-library/dotnet_library/bin/Debug
+/.vs
