@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SBAtpcP34bZSP3iKNVa+KHaksdDP4C7gbJ0bdecv1t5BE4gG7ICJeJvnV4XZWhMkoxO7RaHZsqN+zz6hXAQGDQ==",
+  "dgSpecHash": "ovOuUZfRwXp1aFAUz3OTWM16C0aGHjBWVwiSqq7iPxmuie/01g1+o12veIU5gpKaoyvDxi3nzJQ1Flufgh+BcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+  "projectFilePath": "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
