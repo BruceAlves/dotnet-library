@@ -45,6 +45,8 @@
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.bntCadastrar = new System.Windows.Forms.Button();
             this.bntLimpar = new System.Windows.Forms.Button();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.lb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
-          
             // 
             // label2
             // 
@@ -67,7 +68,6 @@
             this.label2.Size = new System.Drawing.Size(36, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "Email";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtNome
             // 
@@ -89,10 +89,10 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(241, 23);
             this.txtCep.TabIndex = 4;
+            this.txtCep.Leave += new System.EventHandler(this.Sair);
             // 
             // txtRua
             // 
-            this.txtRua.Enabled = false;
             this.txtRua.Location = new System.Drawing.Point(294, 46);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(241, 23);
@@ -100,7 +100,6 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Enabled = false;
             this.txtBairro.Location = new System.Drawing.Point(297, 101);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(241, 23);
@@ -135,7 +134,6 @@
             this.label5.Size = new System.Drawing.Size(38, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "Bairro";
-           
             // 
             // label6
             // 
@@ -159,7 +157,6 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Enabled = false;
             this.txtNumero.Location = new System.Drawing.Point(297, 146);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(110, 23);
@@ -167,7 +164,6 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Enabled = false;
             this.txtEstado.Location = new System.Drawing.Point(428, 146);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(110, 23);
@@ -175,7 +171,7 @@
             // 
             // bntCadastrar
             // 
-            this.bntCadastrar.Location = new System.Drawing.Point(31, 177);
+            this.bntCadastrar.Location = new System.Drawing.Point(33, 185);
             this.bntCadastrar.Name = "bntCadastrar";
             this.bntCadastrar.Size = new System.Drawing.Size(97, 31);
             this.bntCadastrar.TabIndex = 14;
@@ -184,19 +180,38 @@
             // 
             // bntLimpar
             // 
-            this.bntLimpar.Location = new System.Drawing.Point(428, 177);
+            this.bntLimpar.Location = new System.Drawing.Point(425, 225);
             this.bntLimpar.Name = "bntLimpar";
             this.bntLimpar.Size = new System.Drawing.Size(110, 31);
             this.bntLimpar.TabIndex = 15;
             this.bntLimpar.Text = "Limpar";
             this.bntLimpar.UseVisualStyleBackColor = true;
             // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(297, 196);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(140, 23);
+            this.txtCidade.TabIndex = 16;
+            // 
+            // lb
+            // 
+            this.lb.AutoSize = true;
+            this.lb.ForeColor = System.Drawing.SystemColors.Window;
+            this.lb.Location = new System.Drawing.Point(294, 178);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(44, 15);
+            this.lb.TabIndex = 17;
+            this.lb.Text = "Cidade";
+            // 
             // Cadastro_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(566, 229);
+            this.ClientSize = new System.Drawing.Size(566, 266);
+            this.Controls.Add(this.lb);
+            this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.bntLimpar);
             this.Controls.Add(this.bntCadastrar);
             this.Controls.Add(this.txtEstado);
@@ -239,5 +254,7 @@
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button bntCadastrar;
         private System.Windows.Forms.Button bntLimpar;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.Label lb;
     }
 }

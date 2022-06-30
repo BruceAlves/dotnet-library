@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnet_library.Utilitarios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,12 +16,31 @@ namespace dotnet_library
         public Cadastro_Cliente()
         {
             InitializeComponent();
+
+            
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Sair(object sender, EventArgs e)
         {
 
-        }
+            IviaCep endereco = new ViaCep();
+            Endereco? resposta = endereco.EnderecoViaCep(txtCep.Text);
 
+            if (!string.IsNullOrEmpty(resposta?.Rua))
+            {
+                txtRua.Text = resposta?.Rua;
+                txtRua.Enabled = false;
+            }
+            
+            
+            txtBairro.Text = resposta?.Bairro;
+
+            
+            txtBairro.Enabled = false;
+            txtEstado.Enabled = false;
+            txtCidade.Enabled = false;
+            
+            
+        }
     }
 }
