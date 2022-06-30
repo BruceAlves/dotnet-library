@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace dotnet_library
 {
-    public partial class btnLogin : Form
+    public partial class Login : Form
     {
-        public btnLogin()
+        public Login()
         {
             InitializeComponent();
         }
