@@ -6,7 +6,6 @@ C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windo
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.pdb
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.AssemblyReference.cache
-C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Login.resources
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.GenerateResource.cache
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.AssemblyInfoInputs.cache
@@ -16,3 +15,4 @@ C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windo
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.pdb
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.genruntimeconfig.cache
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.btnLogin.resources
