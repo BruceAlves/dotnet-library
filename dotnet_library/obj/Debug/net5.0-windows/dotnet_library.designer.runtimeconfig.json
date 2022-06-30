@@ -7,7 +7,7 @@
     },
     "additionalProbingPaths": [
       "C:\\Users\\Livia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\MARIO\\.nuget\\packages"
+      "C:\\Users\\Livia\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

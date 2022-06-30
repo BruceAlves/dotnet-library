@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SBAtpcP34bZSP3iKNVa+KHaksdDP4C7gbJ0bdecv1t5BE4gG7ICJeJvnV4XZWhMkoxO7RaHZsqN+zz6hXAQGDQ==",
+  "dgSpecHash": "+WyCzxhcGodstBY4iqE1REl4/7FiyBSbz7lbvYrt56knL89DM+H9IyHbFXXLTGHFLfi6Y2+Cpnh8iXVk27t8Nw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Livia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
