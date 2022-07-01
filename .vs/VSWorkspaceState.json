@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\dotnet_library"
   ],
-  "SelectedNode": "\\C:\\Users\\Marcio\\Source\\Repos\\dotnet-library",
+  "SelectedNode": "\\dotnet_library\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

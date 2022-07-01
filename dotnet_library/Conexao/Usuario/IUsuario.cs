@@ -8,5 +8,6 @@ namespace dotnet_library.Conexao.Usuario
 {
    public interface IUsuario
     {
+         bool verificaLogin(string email, string senha);
     }
 }
