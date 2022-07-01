@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {}
+    "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {
+    "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+        "projectUniqueName": "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
         "projectName": "dotnet_library",
-        "projectPath": "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
-        "packagesPath": "C:\\Users\\MARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MARIO\\Source\\Repos\\dotnet-library\\dotnet_library\\obj\\",
+        "projectPath": "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+        "packagesPath": "C:\\Users\\Livia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Livia\\Source\\Repos\\dotnet-library\\dotnet_library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Livia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,9 +40,9 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
-            "MySql.Data": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[8.0.29, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -55,6 +55,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -63,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

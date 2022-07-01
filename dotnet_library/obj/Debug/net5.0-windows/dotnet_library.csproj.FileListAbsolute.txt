@@ -63,3 +63,5 @@ C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windo
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.pdb
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.genruntimeconfig.cache
+C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.CopyComplete
