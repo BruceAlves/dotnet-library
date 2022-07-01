@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet_library.Conexao.Usuario
+namespace dotnet_library.Utilitarios
 {
-   public interface IUsuario
+    internal interface IviaCep
     {
-         bool verificaLogin(string email, string senha);
+        EnderecoViaCep? EnderecoViaCep(string cep);
     }
 }

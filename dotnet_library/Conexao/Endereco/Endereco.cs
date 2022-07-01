@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet_library.Conexao.Usuario
+namespace dotnet_library.Conexao.Endereco
 {
-   public interface IUsuario
+    public class Endereco
     {
-         bool verificaLogin(string email, string senha);
     }
 }

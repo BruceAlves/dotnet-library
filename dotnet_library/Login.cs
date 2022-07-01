@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnet_library.Conexao.Usuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,28 @@ namespace dotnet_library
             InitializeComponent();
         }
 
-   
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            IUsuario conexao = new Usuario();
+            bool usuarioExistente = conexao.verificaLogin(txtNome.Text, txtSenha.Text);
+
+            if (usuarioExistente)
+            {
+                MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                this.Hide(); // esconde a tela atual
+
+                Menu menu = new Menu();
+
+                menu.ShowDialog(); // chama a tela instanciada
+
+
+            }
+            else
+            {
+                MessageBox.Show("Dados inválidos", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+    
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet_library.Conexao.Usuario
+namespace dotnet_library.Conexao.Cliente
 {
-   public interface IUsuario
+    public interface Icliente
     {
-         bool verificaLogin(string email, string senha);
     }
 }
