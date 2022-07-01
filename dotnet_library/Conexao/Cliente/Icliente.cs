@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Cliente
 {
-    internal interface Icliente
+    public interface Icliente
     {
     }
 }

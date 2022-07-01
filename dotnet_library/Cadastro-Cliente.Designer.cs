@@ -89,7 +89,6 @@
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(241, 23);
             this.txtCep.TabIndex = 4;
-            this.txtCep.Text = "34800";
             this.txtCep.Leave += new System.EventHandler(this.Sair);
             // 
             // txtRua
@@ -231,6 +230,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cadastro_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_Cliente";
             this.ResumeLayout(false);
             this.PerformLayout();

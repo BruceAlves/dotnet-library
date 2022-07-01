@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Endereco
 {
-    internal interface Iendereco
+    public interface IEndereco
     {
     }
 }

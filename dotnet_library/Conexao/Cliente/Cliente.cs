@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Cliente
 {
-    internal class Cliente1
+    public class Cliente
     {
     }
 }
