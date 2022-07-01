@@ -24,23 +24,38 @@ namespace dotnet_library
         {
 
             IviaCep endereco = new ViaCep();
-            Endereco? resposta = endereco.EnderecoViaCep(txtCep.Text);
+            EnderecoViaCep? resposta = endereco.EnderecoViaCep(txtCep.Text);
+
 
             if (!string.IsNullOrEmpty(resposta?.Rua))
             {
                 txtRua.Text = resposta?.Rua;
                 txtRua.Enabled = false;
             }
-            
-            
-            txtBairro.Text = resposta?.Bairro;
+
+            if (!string.IsNullOrEmpty(resposta?.Bairro))
+            {
+                txtBairro.Text = resposta?.Bairro;
+                txtBairro.Enabled = false;
+            }
+
+            if (!string.IsNullOrEmpty(resposta?.Cidade))
+            {
+                txtCidade.Text = resposta?.Cidade;
+                txtCidade.Enabled = false;
+            }
+
+            if (!string.IsNullOrEmpty(resposta?.Estado))
+            {
+                txtEstado.Text = resposta?.Estado;
+                txtEstado.Enabled = false;
+            }
 
             
-            txtBairro.Enabled = false;
-            txtEstado.Enabled = false;
-            txtCidade.Enabled = false;
-            
+
             
         }
+
+       
     }
 }

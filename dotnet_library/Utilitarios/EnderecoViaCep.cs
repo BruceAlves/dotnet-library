@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace dotnet_library.Utilitarios
 {
-    internal class Endereco 
+    internal class EnderecoViaCep 
     {
         [JsonProperty("cep")]
         public string? Cep { get; set; }

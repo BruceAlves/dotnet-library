@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet_library.Utilitarios
+namespace dotnet_library.Conexao.Cliente
 {
-    internal interface IviaCep
+    internal class Cliente1
     {
-        EnderecoViaCep? EnderecoViaCep(string cep);
     }
 }

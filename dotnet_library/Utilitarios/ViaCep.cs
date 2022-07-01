@@ -11,7 +11,7 @@ namespace dotnet_library.Utilitarios
     internal class ViaCep : IviaCep
     {
 
-        public Endereco? EnderecoViaCep(string cep)
+        public EnderecoViaCep? EnderecoViaCep(string cep)
         {
            
             HttpClient cliente = new HttpClient();
@@ -21,7 +21,7 @@ namespace dotnet_library.Utilitarios
             string jsonString = respostaJson.Content.ReadAsStringAsync().Result;
 
 
-            Endereco? resposta = JsonConvert.DeserializeObject<Endereco>(jsonString);
+            EnderecoViaCep? resposta = JsonConvert.DeserializeObject<EnderecoViaCep>(jsonString);
 
 
             return resposta ;
