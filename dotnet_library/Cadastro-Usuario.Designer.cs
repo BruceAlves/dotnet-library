@@ -60,6 +60,7 @@ namespace dotnet_library
             // 
             this.txtSenha.Location = new System.Drawing.Point(33, 148);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(303, 23);
             this.txtSenha.TabIndex = 2;
             // 
@@ -101,6 +102,7 @@ namespace dotnet_library
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             this.btnCadastrar.MouseLeave += new System.EventHandler(this.btnCadastrar_MouseLeave);
             this.btnCadastrar.MouseHover += new System.EventHandler(this.btnCadastrar_MouseHover);
             // 
@@ -112,6 +114,7 @@ namespace dotnet_library
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             this.btnLimpar.MouseLeave += new System.EventHandler(this.btnLimpar_MouseLeave);
             this.btnLimpar.MouseHover += new System.EventHandler(this.btnLimpar_MouseHover);
             // 

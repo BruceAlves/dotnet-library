@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnet_library.Conexao.Usuario;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -52,6 +53,44 @@ namespace dotnet_library
             Menu menu = new Menu();
             menu.Show();
             this.Hide();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            bool nomeVazio = txtNome.Text == string.Empty;
+            bool emailVazio = txtEmail.Text == string.Empty;
+            bool senhaVazio = txtSenha.Text == string.Empty;
+
+            if (nomeVazio || emailVazio || senhaVazio)
+            {
+                MessageBox.Show($@"Um ou mais campos não foram preenchidos!", "O cadastro não pôde ser realizado!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                IUsuario verificar = new Usuario();
+                bool teste = verificar.VerificarEmailUsuario(txtEmail.Text);
+                if (teste)
+                {
+                    MessageBox.Show($@"O usuário já está cadastrado!", "Atenção!",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    IUsuario usuario = new Usuario();
+                    usuario.InserirUsuario(txtNome.Text, txtEmail.Text, txtSenha.Text);
+
+                    MessageBox.Show($@"Cadastro efetuado com sucesso!", "Parabens!",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNome.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtSenha.Text = string.Empty;
         }
     }
 }
