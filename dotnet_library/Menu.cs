@@ -97,7 +97,7 @@ namespace dotnet_library
 
             Login login = new Login();
             DialogResult resultado = MessageBox.Show(@$"Deseja realizar o Logout?", "Atenção!",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             
            if(resultado == DialogResult.Yes)
             {
