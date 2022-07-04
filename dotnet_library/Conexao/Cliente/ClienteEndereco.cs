@@ -13,6 +13,7 @@ namespace dotnet_library.Conexao.Cliente
     {
 
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
+
         public void InserirID(int id_Cliente, int id_Endereco)
         {
             string comandoInsert =
@@ -27,9 +28,6 @@ namespace dotnet_library.Conexao.Cliente
 
                 MySqlCommand executorComando = new MySqlCommand(comandoInsert, conexaoMySql);
                 executorComando.ExecuteNonQuery();
-
-                
-
                 
             }
             catch (Exception ex)

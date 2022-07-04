@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Cliente
 {
-    internal interface IClienteEndereco
+    public interface IClienteEndereco
     {
         void InserirID (int id_Cliente, int id_Endereco);
     }
