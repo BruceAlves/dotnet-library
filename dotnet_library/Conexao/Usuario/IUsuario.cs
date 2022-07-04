@@ -9,5 +9,10 @@ namespace dotnet_library.Conexao.Usuario
    public interface IUsuario
     {
          bool verificaLogin(string email, string senha);
+
+        void InserirUsuario(string nome, string email, string senha);
+
+        bool VerificarEmailUsuario(string email);
+
     }
 }
