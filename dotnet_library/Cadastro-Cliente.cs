@@ -56,10 +56,10 @@ namespace dotnet_library
         private void bntCadastrar_Click(object sender, EventArgs e)
         {
             ICliente clienteCadastro = new Cliente();
-           int idCliente = clienteCadastro.CadastrarCliente(txtNome.Text, txtNome.Text);
+            int idCliente = clienteCadastro.CadastrarCliente(txtNome.Text, txtNome.Text);
 
             IEndereco cadastrandoEndereco = new Endereco();
-           int idEndereco = cadastrandoEndereco.CadastrarEndereco(txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtEstado.Text, txtNumero.Text);
+            int idEndereco = cadastrandoEndereco.CadastrarEndereco(txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtEstado.Text, txtNumero.Text);
 
 
             IClienteEndereco inserirId = new ClienteEndereco();

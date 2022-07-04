@@ -25,8 +25,7 @@ namespace dotnet_library.Conexao.Cliente
                 string comandoInsert =
                 $@"insert into tb_cliente (nome, email)
                       values (@nome, @email);";
-
-                mySql = new MySqlConnection(conexao);
+              
                 MySqlCommand cmd = new MySqlCommand(comandoInsert,mySql);
                 cmd.Parameters.AddWithValue("@nome", nome);
                 cmd.Parameters.AddWithValue("@email",email);
