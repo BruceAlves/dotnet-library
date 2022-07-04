@@ -57,9 +57,9 @@ namespace dotnet_library
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            bool nomeVazio = txtNome.Text == string.Empty;
-            bool emailVazio = txtEmail.Text == string.Empty;
-            bool senhaVazio = txtSenha.Text == string.Empty;
+            bool nomeVazio = string.IsNullOrEmpty(txtNome.Text);
+            bool emailVazio = string.IsNullOrEmpty(txtEmail.Text);
+            bool senhaVazio = string.IsNullOrEmpty(txtSenha.Text);
 
             if (nomeVazio || emailVazio || senhaVazio)
             {
