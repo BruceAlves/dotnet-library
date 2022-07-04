@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+/dotnet_library/App.config
+dotnet_library/App.config
+dotnet-library/dotnet_library/App.config
+/dotnet-library/dotnet_library/App.config

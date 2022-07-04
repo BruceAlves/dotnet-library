@@ -177,6 +177,7 @@
             this.bntCadastrar.TabIndex = 14;
             this.bntCadastrar.Text = "Cadastrar";
             this.bntCadastrar.UseVisualStyleBackColor = true;
+            this.bntCadastrar.Click += new System.EventHandler(this.bntCadastrar_Click);
             // 
             // bntLimpar
             // 
