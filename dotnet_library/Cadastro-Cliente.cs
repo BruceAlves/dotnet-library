@@ -1,4 +1,6 @@
-﻿using dotnet_library.Utilitarios;
+﻿using dotnet_library.Conexao.Cliente;
+using dotnet_library.Conexao.Endereco;
+using dotnet_library.Utilitarios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,9 +17,7 @@ namespace dotnet_library
     {
         public Cadastro_Cliente()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent();           
         }
 
         private void Sair(object sender, EventArgs e)
@@ -50,12 +50,23 @@ namespace dotnet_library
                 txtEstado.Text = resposta?.Estado;
                 txtEstado.Enabled = false;
             }
-
-            
-
-            
+                     
         }
 
-       
+        private void bntCadastrar_Click(object sender, EventArgs e)
+        {
+            ICliente clienteCadastro = new Cliente();
+            int idCliente = clienteCadastro.CadastrarCliente(txtNome.Text, txtNome.Text);
+
+            IEndereco cadastrandoEndereco = new Endereco();
+            int idEndereco = cadastrandoEndereco.CadastrarEndereco(txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtEstado.Text, txtNumero.Text);
+
+
+            IClienteEndereco inserirId = new ClienteEndereco();
+            inserirId.InserirID(idCliente,idEndereco);
+        }
     }
+
+
+   
 }

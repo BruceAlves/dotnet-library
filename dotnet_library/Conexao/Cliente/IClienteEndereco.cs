@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Cliente
 {
-    public interface ICliente
+    public interface IClienteEndereco
     {
-        int CadastrarCliente( string nome, string email); 
+        void InserirID (int id_Cliente, int id_Endereco);
     }
 }
