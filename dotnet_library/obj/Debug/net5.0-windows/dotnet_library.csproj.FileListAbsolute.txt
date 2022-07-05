@@ -36,7 +36,10 @@ C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windo
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.pdb
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.genruntimeconfig.cache
+C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.CopyComplete
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Cadastro_Cliente.resources
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.CadastroLivro.resources
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Login.resources
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Menu.resources
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.GenerateResource.cache
@@ -44,7 +47,9 @@ C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windo
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.AssemblyInfoInputs.cache
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.AssemblyInfo.cs
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.CoreCompileInputs.cache
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.AssemblyReference.cache
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.exe
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.dll.config
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.deps.json
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.runtimeconfig.json
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.runtimeconfig.dev.json
@@ -59,9 +64,8 @@ C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windo
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\MySql.Data.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Ubiety.Dns.Core.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\ZstdNet.dll
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.pdb
 C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.genruntimeconfig.cache
-C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.CopyComplete
