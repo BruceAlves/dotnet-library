@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Conexao.Livros
 {
-    interface ILivro
+   public interface ILivro
     {
         DataTable BuscarGenero();
         void CadastrarLivro(string nome, string autor, string sinopse, string genero);
