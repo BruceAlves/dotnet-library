@@ -91,3 +91,9 @@ C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windo
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\ZstdNet.dll
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Cadastro_Usuario.resources
 C:\Users\Livia\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Properties.Resources.resources
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.AssemblyReference.cache
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Cadastro_Usuario.resources
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.CadastroLivro.resources
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Properties.Resources.resources
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\dotnet_library.dll.config
+C:\Users\MARIO\Source\Repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

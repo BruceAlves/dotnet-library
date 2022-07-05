@@ -1,4 +1,5 @@
-﻿using dotnet_library.Conexao.Usuario;
+﻿using dotnet_library.Conexao.Livros;
+using dotnet_library.Conexao.Usuario;
 using dotnet_library.Utilitarios.Model;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace dotnet_library
 
         private void btnCadastrarLivro_Click(object sender, EventArgs e)
         {
-            IUsuario usuarios = new Usuario();
+            ILivro livro = new Livro();
 
             string nome = txtNomeLivro.Text;
             string autor = txtAutor.Text;
@@ -31,11 +32,11 @@ namespace dotnet_library
 
             if (!string.IsNullOrEmpty(nome) && !string.IsNullOrEmpty(autor) && !string.IsNullOrEmpty(sinopse) && !string.IsNullOrEmpty(genero))
             {
-                usuarios.CadastrarLivro(nome, autor, sinopse, genero);
+                livro.CadastrarLivro(nome, autor, sinopse, genero);
             }
             else
             {
-                MessageBox.Show("Erro senha Inválida!");
+                MessageBox.Show("Erro campas não preenchidos !");
             }
         }
 
@@ -43,10 +44,10 @@ namespace dotnet_library
         {
             string query = $@"select id, nome from dotnet_library.tb_genero order by id";
 
-            IUsuario usuario = new Usuario();
+            ILivro livro = new Livro();
 
             cbxGenero.Items.Clear();
-            cbxGenero.DataSource = usuario.BuscarGenero();
+            cbxGenero.DataSource = livro.BuscarGenero();
             cbxGenero.DisplayMember = "nome";
             cbxGenero.ValueMember = "id";
         }
@@ -56,8 +57,22 @@ namespace dotnet_library
             txtNomeLivro.Text = string.Empty;
             txtAutor.Text = string.Empty;
             txtSinopse.Text = string.Empty;
-            cbxGenero.Text = string.Empty;
+          
+        }
 
+        private void txtNomeLivro_Enter(object sender, EventArgs e)
+        {
+            txtNomeLivro.Text = string.Empty;
+        }
+
+        private void txtAutor_Enter(object sender, EventArgs e)
+        {
+            txtAutor.Text = string.Empty;
+        }
+
+        private void txtSinopse_Enter(object sender, EventArgs e)
+        {
+            txtSinopse.Text = string.Empty;
         }
     }
 
