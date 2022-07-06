@@ -36,7 +36,7 @@ namespace dotnet_library
             }
             else
             {
-                MessageBox.Show("Erro campas não preenchidos !");
+                MessageBox.Show("Erro campos não preenchidos !");
             }
         }
 
