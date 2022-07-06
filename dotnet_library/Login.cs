@@ -21,7 +21,7 @@ namespace dotnet_library
         private void btnLogin_Click(object sender, EventArgs e)
         {
             IUsuario conexao = new Usuario();
-            bool usuarioExistente = conexao.verificaLogin(txtNome.Text, txtSenha.Text);
+            bool usuarioExistente = conexao.VerificaLogin(txtNome.Text, txtSenha.Text);
 
             if (usuarioExistente)
             {
