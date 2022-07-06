@@ -17,9 +17,7 @@ namespace dotnet_library.Conexao.Emprestimo
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
 
         public DataTable EmprestarLivro()
-        {
-            
-
+        {            
 
             string query = $@"SELECT tb_livro.nome, tb_livro.autor, tb_livro.sinopse, tb_genero.nome FROM tb_livro
             INNER JOIN tb_genero
