@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<connectionStrings>
+		<add name ="dev" connectionString="server=localhost;database=dotnet_library;Uid=root;pwd=root"/>
+	</connectionStrings>
+	<appSettings> 
+		
+	</appSettings>
+</configuration>
