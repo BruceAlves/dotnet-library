@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
 	<connectionStrings>
-		<add name ="dev" connectionString="server=localhost;database=dotnet_library;Uid=root;pwd=root"/>
+		<add name ="dev" connectionString="Server=localhost;database=dotnet_library;Uid=root;Pwd=root;"/>
 	</connectionStrings>
-	<appSettings> 
-		
-	</appSettings>
+	<add key ="emailFrom" value ="seuEmail@hotmail.com"/>
+	<add key ="senhaEmail" value ="suaSenha"/>
 </configuration>
