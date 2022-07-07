@@ -40,6 +40,13 @@ namespace dotnet_library
                 MessageBox.Show("Dados inválidos", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Recuperacao_Senha recuperacao_Senha = new Recuperacao_Senha();
+            recuperacao_Senha.Show();
+            this.Hide();
+        }
     }
     
 }
