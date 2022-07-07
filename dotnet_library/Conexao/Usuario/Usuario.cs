@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace dotnet_library.Conexao.Usuario
 {
-   public class Usuario : IUsuario
+   public class Usuario : IUsuario 
     {
 
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
@@ -70,7 +70,7 @@ namespace dotnet_library.Conexao.Usuario
         }
 
 
-        public bool verificaLogin(string email, string senha)
+        public bool VerificaLogin(string email, string senha)
         {
              
 
@@ -105,7 +105,7 @@ namespace dotnet_library.Conexao.Usuario
 
             return usuarioValido ;
         }
-
-       
+        
+    
     }
 }
