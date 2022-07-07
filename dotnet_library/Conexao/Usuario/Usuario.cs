@@ -13,7 +13,6 @@ namespace dotnet_library.Conexao.Usuario
    public class Usuario : IUsuario 
     {
 
-
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
 
         public void InserirUsuario(string nome, string email, string senha)
@@ -28,7 +27,7 @@ namespace dotnet_library.Conexao.Usuario
                 MySqlCommand comando = new (query, conexaoMySQL);
                 comando.ExecuteNonQuery();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Erro ao cadastrar!", "ATENÇÃO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -58,7 +57,7 @@ namespace dotnet_library.Conexao.Usuario
                     emailUsuarioValido = true;
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show($@"Erro de conexão", "Atenção", 
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -95,7 +94,7 @@ namespace dotnet_library.Conexao.Usuario
                     usuarioValido = true;
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 MessageBox.Show("Erro de conexão", "ERRO", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
