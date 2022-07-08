@@ -65,6 +65,14 @@ namespace dotnet_library
             IClienteEndereco inserirId = new ClienteEndereco();
             inserirId.InserirID(idCliente,idEndereco);
         }
+
+        private void Cadastro_Cliente_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+
+        }
     }
 
 

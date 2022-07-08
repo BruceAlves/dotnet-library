@@ -233,6 +233,7 @@
             this.Name = "Cadastro_Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_Cliente";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastro_Cliente_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
