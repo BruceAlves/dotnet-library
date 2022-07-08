@@ -83,7 +83,9 @@ namespace dotnet_library
 
         private void btnCadastrarLivro_Click(object sender, EventArgs e)
         {
-
+            CadastroLivro cadastroLivro = new CadastroLivro();
+            cadastroLivro.Show();
+            this.Hide();
         }
 
         private void btnEmprestimos_Click(object sender, EventArgs e)
