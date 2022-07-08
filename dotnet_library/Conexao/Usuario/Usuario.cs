@@ -76,7 +76,7 @@ namespace dotnet_library.Conexao.Usuario
 
         bool usuarioValido = false;
           
-            string query = $@"select * from dados_usario where email = '{email}'
+            string query = $@"select * from tb_usuario where email = '{email}'
                           and
                            senha = '{senha}'";
 

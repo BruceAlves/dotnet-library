@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -40,14 +40,15 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtNome
+            // txtEmail
             // 
-            this.txtNome.Location = new System.Drawing.Point(50, 106);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(171, 23);
-            this.txtNome.TabIndex = 0;
-            this.txtNome.Text = "Usename";
-            this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.Location = new System.Drawing.Point(50, 106);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(171, 23);
+            this.txtEmail.TabIndex = 0;
+            this.txtEmail.Text = "Email";
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             // 
             // txtSenha
             // 
@@ -57,6 +58,7 @@
             this.txtSenha.TabIndex = 1;
             this.txtSenha.Text = "Password";
             this.txtSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             // 
             // btnLogin
             // 
@@ -99,7 +101,7 @@
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.txtSenha);
-            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Location = new System.Drawing.Point(257, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 340);
@@ -136,7 +138,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.LinkLabel linkLabel1;

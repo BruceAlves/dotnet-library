@@ -21,7 +21,7 @@ namespace dotnet_library
         private void btnLogin_Click(object sender, EventArgs e)
         {
             IUsuario conexao = new Usuario();
-            bool usuarioExistente = conexao.VerificaLogin(txtNome.Text, txtSenha.Text);
+            bool usuarioExistente = conexao.VerificaLogin(txtEmail.Text, txtSenha.Text);
 
             if (usuarioExistente)
             {
@@ -46,6 +46,18 @@ namespace dotnet_library
             Recuperacao_Senha recuperacao_Senha = new Recuperacao_Senha();
             recuperacao_Senha.Show();
             this.Hide();
+        }
+
+      
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            txtEmail.Text = string.Empty;
+        }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            txtSenha.Text = string.Empty;
         }
     }
     
