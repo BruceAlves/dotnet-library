@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
 	<connectionStrings>
-		<add name ="dev" connectionString="Server=localhost;database=dotnet_library;Uid=root;Pwd=root;"/>
+		<add name ="dev" connectionString="Server=localhost;database=dotnet_library;Uid=root;Pwd=bruce@#2022;"/>
 	</connectionStrings>
 	<appSettings>
 	<add key ="emailFrom" value ="seuEmail@hotmail.com"/>

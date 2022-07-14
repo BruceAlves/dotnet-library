@@ -90,7 +90,7 @@ namespace dotnet_library
 
         private void btnEmprestimos_Click(object sender, EventArgs e)
         {
-            Emprestimos emprestimos = new Emprestimos();
+            LivrosDisponíveis emprestimos = new LivrosDisponíveis();
             emprestimos.ShowDialog();
         }
 

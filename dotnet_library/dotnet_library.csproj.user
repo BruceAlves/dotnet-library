@@ -14,6 +14,9 @@
     <Compile Update="Emprestimos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LivrosDisponíveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -21,6 +24,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Recuperacao-Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tela-Auxiliar-Emprestimo.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
