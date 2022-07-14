@@ -18,7 +18,7 @@ namespace dotnet_library
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Tela_Auxiliar_Emprestimo());
+            Application.Run(new Menu());
 
 
         }
