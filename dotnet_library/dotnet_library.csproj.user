@@ -23,7 +23,11 @@
     <Compile Update="Recuperacao-Senha.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Tela-Auxiliar-Emprestimo.cs">
+=======
+    <Compile Update="TelaLivrosEmprestados.cs">
+>>>>>>> master
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
