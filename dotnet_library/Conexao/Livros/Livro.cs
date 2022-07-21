@@ -29,7 +29,7 @@ namespace dotnet_library.Conexao.Livros
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, mySql);
                 adapter.Fill(dtGenero);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Erro de conexão", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

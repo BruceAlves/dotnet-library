@@ -367,3 +367,5 @@ FodyWeavers.xsd
 dotnet_library/App.config
 dotnet-library/dotnet_library/App.config
 /dotnet-library/dotnet_library/App.config
+*.resx
+*.cs

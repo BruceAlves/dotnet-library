@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet_library.Conexao.Emprestimo
+namespace dotnet_library.Conexao.Livros_Emprestados
 {
-    public interface IEmprestimo
+    interface ILivrosEmprestados
     {
         void EmprestarLivro(DateTime dataDevolucao, int idLivro, int idCliente );
 

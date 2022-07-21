@@ -11,7 +11,7 @@
     <Compile Update="Cadastro-Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Emprestimos.cs">
+    <Compile Update="LivrosDisponíveis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LivrosEmprestadosUsuario.cs">
@@ -24,6 +24,13 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Recuperacao-Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Update="Tela-Auxiliar-Emprestimo.cs">
+=======
+    <Compile Update="TelaLivrosEmprestados.cs">
+>>>>>>> master
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
