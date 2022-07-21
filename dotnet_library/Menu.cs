@@ -12,8 +12,11 @@ namespace dotnet_library
 {
     public partial class Menu : Form
     {
+        
         public Menu()
         {
+            
+
             InitializeComponent();
         }
 

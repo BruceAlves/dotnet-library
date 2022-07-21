@@ -13,10 +13,9 @@ namespace dotnet_library.Conexao.Livros_Emprestados
     class LivrosEmprestados : ILivrosEmprestados
     {
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
-        public DataTable BuscarLivrosEmprestados()
-        {
-            string query = $@"select nome, autor, sinopse, id_genero FROM tb_livro
-            where disponivel = 0";
+
+        public DataTable EmprestarLivro()
+        {            
 
             MySqlConnection conexaoMysql = new MySqlConnection(conexao);
             DataTable dtLivrosDisponiveis = new DataTable();

@@ -1,4 +1,6 @@
-﻿using dotnet_library.Conexao.Usuario;
+﻿using dotnet_library.Conexao.Cliente;
+using dotnet_library.Conexao.Livros;
+using dotnet_library.Conexao.Usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,10 +23,18 @@ namespace dotnet_library
         private void btnLogin_Click(object sender, EventArgs e)
         {
             IUsuario conexao = new Usuario();
+       
+
             bool usuarioExistente = conexao.VerificaLogin(txtEmail.Text, txtSenha.Text);
 
             if (usuarioExistente)
             {
+                SessaoUsuario.Email = txtEmail.Text;
+                SessaoUsuario.Senha = txtSenha.Text;
+
+                IUsuario usuario = new Usuario();
+                usuario.VerificaLogin(SessaoUsuario.Email, SessaoUsuario.Senha);
+
                 MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 this.Hide(); // esconde a tela atual

@@ -9,6 +9,8 @@ namespace dotnet_library.Conexao.Livros_Emprestados
 {
     interface ILivrosEmprestados
     {
-        DataTable BuscarLivrosEmprestados();
+        void EmprestarLivro(DateTime dataDevolucao, int idLivro, int idCliente );
+
+        DataTable LivrosEmprestados();
     }
 }

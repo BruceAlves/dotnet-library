@@ -1,4 +1,5 @@
-﻿using dotnet_library.Conexao.Usuario;
+﻿using dotnet_library.Conexao.Livros;
+using dotnet_library.Conexao.Usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,8 @@ namespace dotnet_library
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+        
+
             bool nomeVazio = string.IsNullOrEmpty(txtNome.Text);
             bool emailVazio = string.IsNullOrEmpty(txtEmail.Text);
             bool senhaVazio = string.IsNullOrEmpty(txtSenha.Text);
