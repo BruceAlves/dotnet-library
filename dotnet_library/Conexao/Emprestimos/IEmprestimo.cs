@@ -9,7 +9,8 @@ namespace dotnet_library.Conexao.Emprestimo
 {
     public interface IEmprestimo
     {
-        DataTable EmprestarLivro();
+        void EmprestarLivro(DateTime dataDevolucao, int idLivro, int idCliente );
 
+        DataTable LivrosEmprestados();
     }
 }

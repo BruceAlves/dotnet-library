@@ -26,5 +26,10 @@ namespace dotnet_library
             dgvLivros.DataSource = tabelaEmprestimo;
           
         }
+
+        private void bntEmprestar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

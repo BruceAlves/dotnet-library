@@ -44,7 +44,6 @@
             this.dgvLivros.RowTemplate.Height = 25;
             this.dgvLivros.Size = new System.Drawing.Size(257, 319);
             this.dgvLivros.TabIndex = 0;
-            
             // 
             // lbLivros
             // 
@@ -65,7 +64,7 @@
             this.bntEmprestar.TabIndex = 2;
             this.bntEmprestar.Text = "Emprestar";
             this.bntEmprestar.UseVisualStyleBackColor = true;
-        
+            this.bntEmprestar.Click += new System.EventHandler(this.bntEmprestar_Click);
             // 
             // Emprestimos
             // 

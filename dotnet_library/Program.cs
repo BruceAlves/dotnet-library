@@ -18,6 +18,8 @@ namespace dotnet_library
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            //Application.Run(new Cadastro_Usuario());
+            //Application.Run(new LivrosEmprestadosUsuario());
             Application.Run(new Login());
 
 
