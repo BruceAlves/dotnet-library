@@ -52,7 +52,7 @@ namespace dotnet_library
         {
             Menu menu = new Menu();
             menu.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -91,6 +91,14 @@ namespace dotnet_library
             txtNome.Text = string.Empty;
             txtEmail.Text = string.Empty;
             txtSenha.Text = string.Empty;
+        }
+
+        private void Cadastro_Usuario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+
+            Menu menu = new Menu();
+            menu.ShowDialog();
         }
     }
 }

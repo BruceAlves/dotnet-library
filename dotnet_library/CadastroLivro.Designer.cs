@@ -51,7 +51,6 @@ namespace dotnet_library
             this.cbxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cbxGenero.Size = new System.Drawing.Size(197, 23);
             this.cbxGenero.TabIndex = 0;
-            this.cbxGenero.Text = "Gênero";
             // 
             // btnCadastrarLivro
             // 
@@ -79,7 +78,6 @@ namespace dotnet_library
             this.txtNomeLivro.Name = "txtNomeLivro";
             this.txtNomeLivro.Size = new System.Drawing.Size(197, 23);
             this.txtNomeLivro.TabIndex = 3;
-            this.txtNomeLivro.Text = "Nome do Livro";
             this.txtNomeLivro.Enter += new System.EventHandler(this.txtNomeLivro_Enter);
             // 
             // txtSinopse
@@ -88,7 +86,6 @@ namespace dotnet_library
             this.txtSinopse.Name = "txtSinopse";
             this.txtSinopse.Size = new System.Drawing.Size(197, 23);
             this.txtSinopse.TabIndex = 6;
-            this.txtSinopse.Text = "Sinopse";
             this.txtSinopse.Enter += new System.EventHandler(this.txtSinopse_Enter);
             // 
             // txtAutor
@@ -97,7 +94,6 @@ namespace dotnet_library
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(197, 23);
             this.txtAutor.TabIndex = 5;
-            this.txtAutor.Text = "Autor";
             this.txtAutor.Enter += new System.EventHandler(this.txtAutor_Enter);
             // 
             // label1
@@ -154,7 +150,9 @@ namespace dotnet_library
             this.Controls.Add(this.txtNomeLivro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroLivro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroLivro";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CadastroLivro_FormClosed);
             this.Load += new System.EventHandler(this.CadastroLivro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

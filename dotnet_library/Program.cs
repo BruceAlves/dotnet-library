@@ -18,12 +18,8 @@ namespace dotnet_library
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
-            Application.Run(new Menu());
-=======
-            Application.Run(new TelaLivrosEmprestados());
->>>>>>> master
 
+            Application.Run(new Login());
 
         }
     }

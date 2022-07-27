@@ -25,14 +25,11 @@ namespace dotnet_library
 
             if (usuarioExistente)
             {
-                MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                this.Hide(); // esconde a tela atual
-
-                Menu menu = new Menu();
-
-                menu.ShowDialog(); // chama a tela instanciada
-
+                this.Hide();
+                Menu menu = new Menu();             
+                menu.ShowDialog();
 
             }
             else
@@ -45,7 +42,7 @@ namespace dotnet_library
         {
             Recuperacao_Senha recuperacao_Senha = new Recuperacao_Senha();
             recuperacao_Senha.Show();
-            this.Hide();
+            this.Dispose();
         }
 
       

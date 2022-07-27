@@ -68,7 +68,7 @@ namespace dotnet_library
 
         private void Cadastro_Cliente_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             Menu menu = new Menu();
             menu.ShowDialog();
 

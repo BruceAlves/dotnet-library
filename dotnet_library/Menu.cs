@@ -85,7 +85,7 @@ namespace dotnet_library
         {
             CadastroLivro cadastroLivro = new CadastroLivro();
             cadastroLivro.Show();
-            this.Hide();
+            this.Hide(); 
         }
 
         private void btnEmprestimos_Click(object sender, EventArgs e)
@@ -97,26 +97,40 @@ namespace dotnet_library
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
+        {          
             Login login = new Login();
             DialogResult resultado = MessageBox.Show(@$"Deseja realizar o Logout?", "Atenção!",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             
            if(resultado == DialogResult.Yes)
             {
                 login.Show();
-                this.Hide();
+                this.Dispose();
             }
             else
             {
                 Menu menu = new Menu();
                 menu.Show();
-                this.Hide();
+                this.Dispose();
             }
         }
 
-    
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+                    
+            DialogResult resultado = MessageBox.Show(@$"Deseja realmente fechar o sistema ?", "Atenção!",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                Menu menu = new Menu();
+                menu.Show();
+                
+            }
+        }
     }
 }

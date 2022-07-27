@@ -35,6 +35,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -46,7 +48,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(171, 23);
             this.txtEmail.TabIndex = 0;
-            this.txtEmail.Text = "Email";
             this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             // 
@@ -54,9 +55,9 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(50, 154);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(171, 23);
             this.txtSenha.TabIndex = 1;
-            this.txtSenha.Text = "Password";
             this.txtSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             // 
@@ -83,10 +84,10 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(79, 269);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(110, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(120, 15);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Lost you password?";
+            this.linkLabel1.Text = "Esqueceu sua senha ?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // fileSystemWatcher1
@@ -97,6 +98,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.linkLabel1);
@@ -106,6 +109,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 340);
             this.panel1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(50, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Senha";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(50, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Email";
             // 
             // label1
             // 
@@ -128,6 +149,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -145,5 +167,7 @@
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
