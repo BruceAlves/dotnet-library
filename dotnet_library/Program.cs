@@ -19,7 +19,7 @@ namespace dotnet_library
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            Application.Run(new Login());
+            Application.Run(new Tela_Finalizar_Emprestimos());
 
         }
     }
