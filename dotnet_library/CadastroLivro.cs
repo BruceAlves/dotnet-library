@@ -41,8 +41,7 @@ namespace dotnet_library
         }
 
         private void CadastroLivro_Load(object sender, EventArgs e)
-        {
-            string query = $@"select id, nome from dotnet_library.tb_genero order by id";
+        {           
 
             ILivro livro = new Livro();
 
@@ -74,6 +73,15 @@ namespace dotnet_library
         {
             txtSinopse.Text = string.Empty;
         }
+
+        private void CadastroLivro_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+        }
+
+      
     }
 
 }

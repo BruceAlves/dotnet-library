@@ -31,7 +31,6 @@ namespace dotnet_library
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLivrosEmprestados));
             this.dgvLivrosEmprestados = new System.Windows.Forms.DataGridView();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLivrosEmprestados)).BeginInit();
             this.SuspendLayout();
@@ -45,15 +44,6 @@ namespace dotnet_library
             this.dgvLivrosEmprestados.RowTemplate.Height = 25;
             this.dgvLivrosEmprestados.Size = new System.Drawing.Size(422, 281);
             this.dgvLivrosEmprestados.TabIndex = 0;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Location = new System.Drawing.Point(195, 367);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(97, 31);
-            this.btnVoltar.TabIndex = 2;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -72,11 +62,12 @@ namespace dotnet_library
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(493, 425);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dgvLivrosEmprestados);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaLivrosEmprestados";
-            this.Text = "TelaLivrosDisponiveis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Livros Emprestados";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TelaLivrosEmprestados_FormClosed);
             this.Load += new System.EventHandler(this.TelaLivrosEmprestados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLivrosEmprestados)).EndInit();
             this.ResumeLayout(false);
@@ -87,7 +78,6 @@ namespace dotnet_library
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLivrosEmprestados;
-        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label label1;
     }
 }

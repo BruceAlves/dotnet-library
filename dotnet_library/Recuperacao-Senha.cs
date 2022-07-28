@@ -99,7 +99,7 @@ namespace dotnet_library
         {
             Login voltarLogin = new Login();
             voltarLogin.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

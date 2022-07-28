@@ -21,7 +21,9 @@ namespace dotnet_library
             //Application.Run(new Cadastro_Usuario());
             //Application.Run(new LivrosEmprestadosUsuario());
             Application.Run(new Login());
+            Application.Run(new TelaLivrosEmprestados());
 
+            Application.Run(new Tela_Finalizar_Emprestimos());
 
         }
     }

@@ -149,6 +149,7 @@ namespace dotnet_library
             this.Name = "Cadastro_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro_Usuario";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastro_Usuario_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

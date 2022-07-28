@@ -25,5 +25,12 @@ namespace dotnet_library
 
             dgvLivrosEmprestados.DataSource = tabelaLivrosEmprestados;
         }
+
+        private void TelaLivrosEmprestados_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+            Tela_Auxiliar_Emprestimo tela_Auxiliar_Emprestimo = new Tela_Auxiliar_Emprestimo();
+            tela_Auxiliar_Emprestimo.ShowDialog();
+        }
     }
 }
