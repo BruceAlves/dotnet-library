@@ -117,3 +117,4 @@ C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-window
 C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.dll
 C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\ref\dotnet_library.dll
 C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.pdb
+C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.LivrosEmprestadosUsuario.resources
