@@ -51,6 +51,7 @@ namespace dotnet_library
             this.cbxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cbxGenero.Size = new System.Drawing.Size(197, 23);
             this.cbxGenero.TabIndex = 0;
+           
             // 
             // btnCadastrarLivro
             // 
