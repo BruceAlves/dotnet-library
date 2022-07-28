@@ -14,9 +14,6 @@
     <Compile Update="LivrosDisponíveis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LivrosEmprestadosUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
