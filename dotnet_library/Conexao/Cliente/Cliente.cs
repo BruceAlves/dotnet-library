@@ -17,7 +17,32 @@ namespace dotnet_library.Conexao.Cliente
 
         public DataTable BuscarCliente()
         {
-            throw new NotImplementedException();
+            string select = $@"select id, nome from dotnet_library.tb_cliente order by id;";
+
+
+            DataTable tbclientes = new DataTable();
+
+
+            MySqlConnection mySql = new MySqlConnection(conexao);
+
+            try
+            {
+                mySql.Open();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter(select, mySql);
+                adapter.Fill(tbclientes);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Erro de conexão", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                mySql.Close();
+            }
+
+            return tbclientes;
         }
 
         public int CadastrarCliente( string nome, string email)

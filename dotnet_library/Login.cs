@@ -35,7 +35,7 @@ namespace dotnet_library
                 IUsuario usuario = new Usuario();
                 usuario.VerificaLogin(SessaoUsuario.Email, SessaoUsuario.Senha);
 
-                MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Usuário logado com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Hide();
                 Menu menu = new Menu();             
