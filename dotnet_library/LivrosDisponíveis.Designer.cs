@@ -41,9 +41,10 @@
             this.dgvLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLivros.Location = new System.Drawing.Point(12, 33);
             this.dgvLivros.Name = "dgvLivros";
+            this.dgvLivros.RowHeadersVisible = false;
             this.dgvLivros.RowTemplate.Height = 25;
             this.dgvLivros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLivros.Size = new System.Drawing.Size(447, 288);
+            this.dgvLivros.Size = new System.Drawing.Size(505, 288);
             this.dgvLivros.TabIndex = 0;
             // 
             // lbLivros
@@ -65,13 +66,14 @@
             this.bntEmprestar.TabIndex = 2;
             this.bntEmprestar.Text = "Emprestar";
             this.bntEmprestar.UseVisualStyleBackColor = true;
+            this.bntEmprestar.Click += new System.EventHandler(this.bntEmprestar_Click);
             // 
             // LivrosDisponíveis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(471, 370);
+            this.ClientSize = new System.Drawing.Size(529, 370);
             this.Controls.Add(this.bntEmprestar);
             this.Controls.Add(this.lbLivros);
             this.Controls.Add(this.dgvLivros);

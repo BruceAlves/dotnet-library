@@ -36,6 +36,7 @@ namespace dotnet_library
 
         private void bntLivrosDisponiveis_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             LivrosDisponíveis livrosDisponíveis = new LivrosDisponíveis();
             livrosDisponíveis.ShowDialog();
         }
