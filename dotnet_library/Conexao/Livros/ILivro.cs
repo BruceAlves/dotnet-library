@@ -11,5 +11,9 @@ namespace dotnet_library.Conexao.Livros
     {
         DataTable BuscarGenero();
         void CadastrarLivro(string nome, string autor, string sinopse, string genero);
+
+        DataTable BuscarLivrosEmprestados();
+
+        void DevolverLivro(string id);
     }
 }

@@ -32,6 +32,7 @@ namespace dotnet_library
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLivrosEmprestados));
             this.dgvLivrosEmprestados = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDevolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLivrosEmprestados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,8 +42,10 @@ namespace dotnet_library
             this.dgvLivrosEmprestados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLivrosEmprestados.Location = new System.Drawing.Point(34, 69);
             this.dgvLivrosEmprestados.Name = "dgvLivrosEmprestados";
+            this.dgvLivrosEmprestados.RowHeadersVisible = false;
             this.dgvLivrosEmprestados.RowTemplate.Height = 25;
-            this.dgvLivrosEmprestados.Size = new System.Drawing.Size(422, 281);
+            this.dgvLivrosEmprestados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLivrosEmprestados.Size = new System.Drawing.Size(404, 281);
             this.dgvLivrosEmprestados.TabIndex = 0;
             // 
             // label1
@@ -55,12 +58,23 @@ namespace dotnet_library
             this.label1.TabIndex = 3;
             this.label1.Text = "LISTA DE LIVROS ALUGADOS";
             // 
+            // btnDevolver
+            // 
+            this.btnDevolver.Location = new System.Drawing.Point(190, 366);
+            this.btnDevolver.Name = "btnDevolver";
+            this.btnDevolver.Size = new System.Drawing.Size(75, 23);
+            this.btnDevolver.TabIndex = 4;
+            this.btnDevolver.Text = "Devolver";
+            this.btnDevolver.UseVisualStyleBackColor = true;
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
+            // 
             // TelaLivrosEmprestados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(493, 425);
+            this.ClientSize = new System.Drawing.Size(472, 425);
+            this.Controls.Add(this.btnDevolver);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLivrosEmprestados);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -79,5 +93,6 @@ namespace dotnet_library
 
         private System.Windows.Forms.DataGridView dgvLivrosEmprestados;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDevolver;
     }
 }
