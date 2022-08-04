@@ -42,6 +42,31 @@ namespace dotnet_library.Conexao.Livros
             return dtGenero;
         }
 
+        public DataTable BuscarLivrosEmprestados()
+        {
+            string query = $@"select id,nome,autor,sinopse from dotnet_library.tb_livro
+            where disponivel = 0";
+
+            DataTable dtLivrosEmprestados = new DataTable();
+
+            MySqlConnection mySql = new MySqlConnection(conexao);
+
+            try
+            {
+                mySql.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, mySql);
+                adapter.Fill(dtLivrosEmprestados);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro ao realizar a busca", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                mySql.Close();
+            }
+            return dtLivrosEmprestados;
+        }
 
         public void CadastrarLivro(string nome, string autor, string sinopse, string genero)
         {
@@ -60,6 +85,32 @@ namespace dotnet_library.Conexao.Livros
             catch (Exception ex)
             {
                 MessageBox.Show("Erro de conexão com o Banco de dados", $"erro\n{ex.Message}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                mysql.Close();
+            }
+        }
+
+        public void DevolverLivro(string id)
+        {
+            string query = $@"update dotnet_library.tb_livro set disponivel = 1
+             where id = {id};";
+
+            MySqlConnection mysql = new MySqlConnection(conexao);
+
+            try
+            {
+                mysql.Open();
+                MySqlCommand comando = new MySqlCommand(query, mysql);
+                comando.ExecuteNonQuery();
+                MessageBox.Show($"Devolução Efetuada!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro de conexão com o Banco de dados", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             finally

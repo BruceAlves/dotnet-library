@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnet_library.Conexao.Livros;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,19 +20,45 @@ namespace dotnet_library
 
         private void TelaLivrosEmprestados_Load(object sender, EventArgs e)
         {
-
-            /*
-            ILivrosEmprestados livrosEmprestados = new LivrosEmprestados();
+            ILivro livrosEmprestados = new Livro();
             DataTable tabelaLivrosEmprestados = livrosEmprestados.BuscarLivrosEmprestados();
 
-            dgvLivrosEmprestados.DataSource = tabelaLivrosEmprestados;*/
+            dgvLivrosEmprestados.DataSource = tabelaLivrosEmprestados;
         }
-            
+
         private void TelaLivrosEmprestados_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Dispose();
             Tela_Auxiliar_Emprestimo tela_Auxiliar_Emprestimo = new Tela_Auxiliar_Emprestimo();
             tela_Auxiliar_Emprestimo.ShowDialog();
+        }
+
+        private void btnDevolver_Click(object sender, EventArgs e)
+        {
+            ILivro livro = new Livro();
+
+            string? id = dgvLivrosEmprestados.SelectedRows[0].Cells[0].Value.ToString();
+
+            var resposta = DialogResult;
+
+            resposta = MessageBox.Show($@"Deseja realmente devolver o livro?", "ATENÇÃO!",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resposta == DialogResult.Yes)
+            {
+                this.Dispose();
+
+                livro.DevolverLivro(id);
+
+                Tela_Auxiliar_Emprestimo tela_Auxiliar_Emprestimo = new Tela_Auxiliar_Emprestimo();
+
+                tela_Auxiliar_Emprestimo.Show();
+            }
+            else
+            {
+
+            }
+
         }
     }
 }
