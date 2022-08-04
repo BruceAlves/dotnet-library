@@ -44,8 +44,10 @@ namespace dotnet_library.Conexao.Livros
 
         public DataTable BuscarLivrosEmprestados()
         {
-            string query = $@"select id,nome,autor,sinopse from dotnet_library.tb_livro
-            where disponivel = 0";
+            string query = $@"SELECT tb_livro.id as 'código' , tb_livro.nome, tb_livro.autor, tb_livro.sinopse, tb_genero.nome  as 'genêro' FROM tb_livro
+            INNER JOIN tb_genero
+            ON tb_livro.id_genero = tb_genero.id
+            where disponivel = 0;";
 
             DataTable dtLivrosEmprestados = new DataTable();
 

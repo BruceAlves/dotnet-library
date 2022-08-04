@@ -108,13 +108,12 @@ namespace dotnet_library
            if(resultado == DialogResult.Yes)
             {
                 login.Show();
-                this.Dispose();
+                this.Hide();
             }
             else
             {
                 Menu menu = new Menu();
-                menu.Show();
-                this.Dispose();
+                this.Hide();
             }
         }
 

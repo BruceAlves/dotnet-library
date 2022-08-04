@@ -104,7 +104,9 @@ namespace dotnet_library
             this.Controls.Add(this.txtEmailValidacao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Recuperacao_Senha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperacao_Senha";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Recuperacao_Senha_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -44,15 +44,15 @@ namespace dotnet_library
             resposta = MessageBox.Show($@"Deseja realmente devolver o livro?", "ATENÇÃO!",
                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            livro.DevolverLivro(id);
+
             if (resposta == DialogResult.Yes)
             {
-                this.Dispose();
-
-                livro.DevolverLivro(id);
-
                 Tela_Auxiliar_Emprestimo tela_Auxiliar_Emprestimo = new Tela_Auxiliar_Emprestimo();
 
                 tela_Auxiliar_Emprestimo.Show();
+
+                this.Dispose();
             }
             else
             {
