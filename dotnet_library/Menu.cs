@@ -11,12 +11,9 @@ using System.Windows.Forms;
 namespace dotnet_library
 {
     public partial class Menu : Form
-    {
-        
+    {      
         public Menu()
         {
-            
-
             InitializeComponent();
         }
 
@@ -118,8 +115,7 @@ namespace dotnet_library
         }
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
-        {
-                    
+        {                   
             DialogResult resultado = MessageBox.Show(@$"Deseja realmente fechar o sistema ?", "Atenção!",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 

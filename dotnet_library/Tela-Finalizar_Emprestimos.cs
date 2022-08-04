@@ -49,18 +49,24 @@ namespace dotnet_library
         private void btnComfirmar_Click(object sender, EventArgs e)
         {
             DateTime dataDevolucao = mcDataDevolucao.SelectionStart.Date;
-            int idCliente = Convert.ToInt32(cbxClientes.SelectedValue.ToString());
 
-            IEmprestimos emprestimos = new Emprestimos();
-            emprestimos.RegistrarEmprestimo(dataDevolucao, SessaoUsuario.Id,idLivro,idCliente);
-            emprestimos.MarcarLivroIndisponivel(idLivro);
+            if(dataDevolucao < DateTime.Now)
+            {
+                MessageBox.Show("Data inválida!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                int idCliente = Convert.ToInt32(cbxClientes.SelectedValue.ToString());
 
-            this.Dispose();
+                IEmprestimos emprestimos = new Emprestimos();
+                emprestimos.RegistrarEmprestimo(dataDevolucao, SessaoUsuario.Id, idLivro, idCliente);
+                emprestimos.MarcarLivroIndisponivel(idLivro);
 
-            LivrosDisponíveis livrosDisponíveis = new LivrosDisponíveis();
-            livrosDisponíveis.ShowDialog();
+                this.Dispose();
 
-
+                LivrosDisponíveis livrosDisponíveis = new LivrosDisponíveis();
+                livrosDisponíveis.ShowDialog();
+            }
         }
     }
 }

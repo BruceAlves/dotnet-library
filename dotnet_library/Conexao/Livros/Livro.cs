@@ -72,8 +72,8 @@ namespace dotnet_library.Conexao.Livros
 
         public void CadastrarLivro(string nome, string autor, string sinopse, string genero)
         {
-            string query = $@"insert into dotnet_library.tb_livro(nome,autor,sinopse,id_genero)
-           values('{nome}', '{autor}', '{sinopse}','{genero}')";
+            string query = $@"insert into dotnet_library.tb_livro(nome,autor,sinopse,id_genero,disponivel)
+           values('{nome}', '{autor}', '{sinopse}','{genero}', '1')";
 
             MySqlConnection mysql = new MySqlConnection(conexao);
 

@@ -55,15 +55,27 @@ namespace dotnet_library
 
         private void bntCadastrar_Click(object sender, EventArgs e)
         {
-            ICliente clienteCadastro = new Cliente();
-            int idCliente = clienteCadastro.CadastrarCliente(txtNome.Text, txtNome.Text);
 
-            IEndereco cadastrandoEndereco = new Endereco();
-            int idEndereco = cadastrandoEndereco.CadastrarEndereco(txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtEstado.Text, txtNumero.Text);
+            if(!string.IsNullOrEmpty(txtNome.Text) || !string.IsNullOrEmpty(txtEmail.Text) || !string.IsNullOrEmpty(txtRua.Text) || !string.IsNullOrEmpty(txtNumero.Text) || !string.IsNullOrEmpty(txtBairro.Text) || !string.IsNullOrEmpty(txtCep.Text) || !string.IsNullOrEmpty(txtEstado.Text))
+            {
+                ICliente clienteCadastro = new Cliente();
+                int idCliente = clienteCadastro.CadastrarCliente(txtNome.Text, txtNome.Text);
+
+                IEndereco cadastrandoEndereco = new Endereco();
+                int idEndereco = cadastrandoEndereco.CadastrarEndereco(txtCep.Text, txtRua.Text, txtBairro.Text, txtCidade.Text, txtEstado.Text, txtNumero.Text);
 
 
-            IClienteEndereco inserirId = new ClienteEndereco();
-            inserirId.InserirID(idCliente,idEndereco);
+                IClienteEndereco inserirId = new ClienteEndereco();
+                inserirId.InserirID(idCliente, idEndereco);
+            }
+            else
+            {
+                MessageBox.Show("Campos não preenchidos!");
+            }
+
+            
+
+            
         }
 
         private void Cadastro_Cliente_FormClosed(object sender, FormClosedEventArgs e)
