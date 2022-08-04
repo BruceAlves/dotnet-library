@@ -33,6 +33,10 @@ namespace dotnet_library
             if (!string.IsNullOrEmpty(nome) && !string.IsNullOrEmpty(autor) && !string.IsNullOrEmpty(sinopse) && !string.IsNullOrEmpty(genero))
             {
                 livro.CadastrarLivro(nome, autor, sinopse, genero);
+
+                txtAutor.Text = string.Empty;
+                txtNomeLivro.Text = string.Empty;
+                txtSinopse.Text = string.Empty;
             }
             else
             {
