@@ -52,7 +52,7 @@ namespace dotnet_library
         {
             Recuperacao_Senha recuperacao_Senha = new Recuperacao_Senha();
             recuperacao_Senha.Show();
-            this.Dispose();
+            this.Hide();
         }
 
       

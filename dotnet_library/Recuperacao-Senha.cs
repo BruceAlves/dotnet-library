@@ -107,6 +107,11 @@ namespace dotnet_library
             txtEmailValidacao.Text = string.Empty;
         }
 
-
+        private void Recuperacao_Senha_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Dispose();
+        }
     }
 }
