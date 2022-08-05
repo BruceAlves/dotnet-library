@@ -136,3 +136,4 @@ C:\Users\User\source\repos\dotnet-library\dotnet_library\bin\Debug\net5.0-window
 C:\Users\User\source\repos\dotnet-library\dotnet_library\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
 C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.csproj.CopyComplete
 C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.genruntimeconfig.cache
+C:\Users\User\source\repos\dotnet-library\dotnet_library\obj\Debug\net5.0-windows\dotnet_library.Recuperar_Senha.resources
