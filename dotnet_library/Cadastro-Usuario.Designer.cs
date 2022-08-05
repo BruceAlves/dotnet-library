@@ -38,7 +38,6 @@ namespace dotnet_library
             this.label3 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNome
@@ -98,7 +97,7 @@ namespace dotnet_library
             // 
             this.btnCadastrar.Location = new System.Drawing.Point(33, 177);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(97, 31);
+            this.btnCadastrar.Size = new System.Drawing.Size(133, 31);
             this.btnCadastrar.TabIndex = 6;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -108,9 +107,9 @@ namespace dotnet_library
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(136, 177);
+            this.btnLimpar.Location = new System.Drawing.Point(203, 177);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(97, 31);
+            this.btnLimpar.Size = new System.Drawing.Size(133, 31);
             this.btnLimpar.TabIndex = 7;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -118,25 +117,12 @@ namespace dotnet_library
             this.btnLimpar.MouseLeave += new System.EventHandler(this.btnLimpar_MouseLeave);
             this.btnLimpar.MouseHover += new System.EventHandler(this.btnLimpar_MouseHover);
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(239, 177);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(97, 31);
-            this.btnCancelar.TabIndex = 8;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
-            this.btnCancelar.MouseHover += new System.EventHandler(this.btnCancelar_MouseHover);
-            // 
             // Cadastro_Usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(374, 231);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label3);
@@ -148,7 +134,7 @@ namespace dotnet_library
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cadastro_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro_Usuario";
+            this.Text = "Cadastro Usuario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastro_Usuario_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,6 +151,5 @@ namespace dotnet_library
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnCancelar;
     }
 }

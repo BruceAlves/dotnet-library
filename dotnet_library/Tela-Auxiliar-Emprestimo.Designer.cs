@@ -32,7 +32,6 @@
             this.bntLivrosDisponiveis = new System.Windows.Forms.Button();
             this.bntLivrosEmprestados = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.bntFechar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,16 +67,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Selecione uma Opção";
             // 
-            // bntFechar
-            // 
-            this.bntFechar.Location = new System.Drawing.Point(150, 143);
-            this.bntFechar.Name = "bntFechar";
-            this.bntFechar.Size = new System.Drawing.Size(75, 23);
-            this.bntFechar.TabIndex = 3;
-            this.bntFechar.Text = "Fechar";
-            this.bntFechar.UseVisualStyleBackColor = true;
-            this.bntFechar.Click += new System.EventHandler(this.bntFechar_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -95,10 +84,10 @@
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(384, 178);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.bntFechar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bntLivrosEmprestados);
             this.Controls.Add(this.bntLivrosDisponiveis);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Auxiliar_Emprestimo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -115,7 +104,6 @@
         private System.Windows.Forms.Button bntLivrosDisponiveis;
         private System.Windows.Forms.Button bntLivrosEmprestados;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bntFechar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
