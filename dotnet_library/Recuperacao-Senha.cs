@@ -41,9 +41,62 @@ namespace dotnet_library
                     var mail = new MailMessage();
                     mail.From = new MailAddress(emailRemetente);
                     mail.To.Add(txtEmailValidacao.Text);
-
+                    mail.IsBodyHtml = true;
                     mail.Subject = "Recuperação de senha";
-                    mail.Body = $"Sua senha temporaria é {senhaTemporaria}";
+                    mail.Body = @"<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+
+    <style>
+        #DivRecuperacao{
+
+            width: 350px;
+            height: 300px;
+            background-color: grey;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+        }
+        #DivCodigo{
+            width: 200px;
+            height: 100px;
+            background-color: cornflowerblue;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #DivCodigo p{
+
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id='DivRecuperacao'>
+        <h3>
+            Recuperação de senha DotNet Library!
+        </h3>
+        <div id='DivCodigo'>
+            <p>
+                CÓDIGO: 
+            </p>
+            <h2>
+               " + senhaTemporaria + @" 
+            </h2>
+        </div>
+    </div>
+</body>
+</html>";
 
                     SmtpServer.Port = 587;
                     SmtpServer.UseDefaultCredentials = false;
@@ -74,16 +127,6 @@ namespace dotnet_library
         private void btnRecuperarSenha_MouseLeave(object sender, EventArgs e)
         {
             btnRecuperarSenha.BackColor = Color.White;
-        }
-
-        private void btnCancelar_MouseHover(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.DodgerBlue;
-        }
-
-        private void btnCancelar_MouseLeave(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.White;
         }
 
         private void btnLimpar_MouseHover(object sender, EventArgs e)

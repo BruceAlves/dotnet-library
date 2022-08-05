@@ -33,7 +33,6 @@ namespace dotnet_library
             this.txtEmailValidacao = new System.Windows.Forms.TextBox();
             this.btnRecuperarSenha = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -67,21 +66,9 @@ namespace dotnet_library
             this.label1.TabIndex = 2;
             this.label1.Text = "Informe seu email";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(186, 127);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(111, 31);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            this.btnCancelar.MouseLeave += new System.EventHandler(this.btnCancelar_MouseLeave);
-            this.btnCancelar.MouseHover += new System.EventHandler(this.btnCancelar_MouseHover);
-            // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(106, 164);
+            this.btnLimpar.Location = new System.Drawing.Point(186, 127);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(111, 31);
             this.btnLimpar.TabIndex = 4;
@@ -98,14 +85,13 @@ namespace dotnet_library
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(327, 254);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRecuperarSenha);
             this.Controls.Add(this.txtEmailValidacao);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Recuperacao_Senha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recuperacao_Senha";
+            this.Text = "Recuperação Senha";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Recuperacao_Senha_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,7 +103,6 @@ namespace dotnet_library
         private System.Windows.Forms.TextBox txtEmailValidacao;
         private System.Windows.Forms.Button btnRecuperarSenha;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnLimpar;
     }
 }

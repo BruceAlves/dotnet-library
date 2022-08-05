@@ -39,16 +39,6 @@ namespace dotnet_library
             btnLimpar.BackColor = Color.White;
         }
 
-        private void btnCancelar_MouseHover(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.DodgerBlue;
-        }
-
-        private void btnCancelar_MouseLeave(object sender, EventArgs e)
-        {
-            btnCancelar.BackColor = Color.White;
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
@@ -85,15 +75,15 @@ namespace dotnet_library
 
                     MessageBox.Show($@"Cadastro efetuado com sucesso!", "Parabens!",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    LimparCampos();
                 }
             }
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtNome.Text = string.Empty;
-            txtEmail.Text = string.Empty;
-            txtSenha.Text = string.Empty;
+            LimparCampos();
         }
 
         private void Cadastro_Usuario_FormClosed(object sender, FormClosedEventArgs e)
@@ -102,6 +92,13 @@ namespace dotnet_library
 
             Menu menu = new Menu();
             menu.ShowDialog();
+        }
+
+        private void LimparCampos()
+        {
+            txtNome.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtSenha.Text = string.Empty;
         }
     }
 }

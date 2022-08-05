@@ -104,12 +104,7 @@ namespace dotnet_library
             
            if(resultado == DialogResult.Yes)
             {
-                login.Show();
-                this.Hide();
-            }
-            else
-            {
-                Menu menu = new Menu();
+                login.ShowDialog();
                 this.Hide();
             }
         }
