@@ -35,6 +35,7 @@ namespace dotnet_library
             else
             {
                 MessageBox.Show("Por favor tente novamente", "Código inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCodigo.Text = string.Empty;
             }
         }
 
@@ -69,7 +70,7 @@ namespace dotnet_library
             }
             else
             {
-                MessageBox.Show("As senha não comferem", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("As senhas informadas são diferentes.", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

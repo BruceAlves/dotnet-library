@@ -59,9 +59,9 @@ namespace dotnet_library
             this.label1.ForeColor = System.Drawing.SystemColors.Menu;
             this.label1.Location = new System.Drawing.Point(25, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cliente";
+            this.label1.Text = "Cliente:";
             // 
             // txtFuncionario
             // 
@@ -77,9 +77,9 @@ namespace dotnet_library
             this.label2.ForeColor = System.Drawing.SystemColors.Menu;
             this.label2.Location = new System.Drawing.Point(160, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 15);
+            this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Responsável";
+            this.label2.Text = "Responsável:";
             // 
             // txtLivro
             // 
@@ -95,9 +95,9 @@ namespace dotnet_library
             this.label4.ForeColor = System.Drawing.SystemColors.Menu;
             this.label4.Location = new System.Drawing.Point(26, 145);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 15);
+            this.label4.Size = new System.Drawing.Size(102, 15);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Livro";
+            this.label4.Text = "Livro selecionado:";
             // 
             // mcDataDevolucao
             // 
@@ -107,11 +107,12 @@ namespace dotnet_library
             // 
             // btnComfirmar
             // 
-            this.btnComfirmar.Location = new System.Drawing.Point(377, 266);
+            this.btnComfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComfirmar.Location = new System.Drawing.Point(364, 266);
             this.btnComfirmar.Name = "btnComfirmar";
-            this.btnComfirmar.Size = new System.Drawing.Size(105, 23);
+            this.btnComfirmar.Size = new System.Drawing.Size(118, 29);
             this.btnComfirmar.TabIndex = 10;
-            this.btnComfirmar.Text = "Comfirmar";
+            this.btnComfirmar.Text = "Confirmar";
             this.btnComfirmar.UseVisualStyleBackColor = true;
             this.btnComfirmar.Click += new System.EventHandler(this.btnComfirmar_Click);
             // 
@@ -121,9 +122,9 @@ namespace dotnet_library
             this.label3.ForeColor = System.Drawing.SystemColors.Menu;
             this.label3.Location = new System.Drawing.Point(281, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 15);
+            this.label3.Size = new System.Drawing.Size(172, 15);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Selecione  a Data de Devolução";
+            this.label3.Text = "Selecione  a data de devolução:";
             // 
             // txtData
             // 
@@ -141,7 +142,7 @@ namespace dotnet_library
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 15);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Data de Retirada";
+            this.label5.Text = "Data de retirada:";
             // 
             // pictureBox1
             // 
@@ -158,7 +159,7 @@ namespace dotnet_library
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(503, 298);
+            this.ClientSize = new System.Drawing.Size(503, 307);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtData);
@@ -171,10 +172,13 @@ namespace dotnet_library
             this.Controls.Add(this.txtFuncionario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbxClientes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Tela_Finalizar_Emprestimos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Finalizar_Emprestimos";
+            this.Text = "Finalizar  emprestimo";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Tela_Finalizar_Emprestimos_FormClosed);
             this.Load += new System.EventHandler(this.Tela_Finalizar_Emprestimos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

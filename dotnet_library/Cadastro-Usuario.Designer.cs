@@ -95,6 +95,7 @@ namespace dotnet_library
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Location = new System.Drawing.Point(33, 177);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(133, 31);
@@ -107,6 +108,7 @@ namespace dotnet_library
             // 
             // btnLimpar
             // 
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.Location = new System.Drawing.Point(203, 177);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(133, 31);
@@ -131,10 +133,13 @@ namespace dotnet_library
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNome);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Cadastro_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro Usuario";
+            this.Text = "Cadastrar usuário";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastro_Usuario_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

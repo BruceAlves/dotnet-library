@@ -50,8 +50,10 @@ namespace dotnet_library
             // 
             this.txtCodigo.Location = new System.Drawing.Point(140, 116);
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.PasswordChar = '*';
             this.txtCodigo.Size = new System.Drawing.Size(177, 23);
             this.txtCodigo.TabIndex = 1;
+            this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -67,6 +69,7 @@ namespace dotnet_library
             // 
             // btnComfirmarCodigo
             // 
+            this.btnComfirmarCodigo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnComfirmarCodigo.Location = new System.Drawing.Point(323, 114);
             this.btnComfirmarCodigo.Name = "btnComfirmarCodigo";
             this.btnComfirmarCodigo.Size = new System.Drawing.Size(122, 24);
@@ -79,11 +82,11 @@ namespace dotnet_library
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(118, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(295, 30);
+            this.label1.Size = new System.Drawing.Size(303, 24);
             this.label1.TabIndex = 11;
             this.label1.Text = "Insira o código de segurança";
             // 
@@ -109,6 +112,7 @@ namespace dotnet_library
             // 
             // btnComfirmar
             // 
+            this.btnComfirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnComfirmar.Enabled = false;
             this.btnComfirmar.Location = new System.Drawing.Point(346, 55);
             this.btnComfirmar.Name = "btnComfirmar";
@@ -126,6 +130,7 @@ namespace dotnet_library
             this.txtComfirmarSenha.PasswordChar = '*';
             this.txtComfirmarSenha.Size = new System.Drawing.Size(203, 23);
             this.txtComfirmarSenha.TabIndex = 19;
+            this.txtComfirmarSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -147,6 +152,7 @@ namespace dotnet_library
             this.txtCriarSenha.PasswordChar = '*';
             this.txtCriarSenha.Size = new System.Drawing.Size(325, 23);
             this.txtCriarSenha.TabIndex = 17;
+            this.txtCriarSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -186,10 +192,13 @@ namespace dotnet_library
             this.Controls.Add(this.btnComfirmarCodigo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Recuperar_Senha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recuperar Senha";
+            this.Text = "Recuperar senha";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupComfirmarSenha.ResumeLayout(false);
             this.groupComfirmarSenha.PerformLayout();

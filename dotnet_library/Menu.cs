@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace dotnet_library
 {
     public partial class Menu : Form
-    {      
+    {
         public Menu()
         {
             InitializeComponent();
@@ -85,7 +85,7 @@ namespace dotnet_library
         {
             CadastroLivro cadastroLivro = new CadastroLivro();
             cadastroLivro.Show();
-            this.Hide(); 
+            this.Hide();
         }
 
         private void btnEmprestimos_Click(object sender, EventArgs e)
@@ -97,20 +97,28 @@ namespace dotnet_library
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
-        {          
+        {
+           
             Login login = new Login();
+
             DialogResult resultado = MessageBox.Show(@$"Deseja realizar o Logout?", "Atenção!",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
-           if(resultado == DialogResult.Yes)
+
+            if (resultado == DialogResult.Yes)
             {
                 login.ShowDialog();
                 this.Hide();
             }
+            else
+            {
+                this.Dispose();
+                Menu menu = new Menu();
+                menu.ShowDialog();
+            }
         }
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
-        {                   
+        {
             DialogResult resultado = MessageBox.Show(@$"Deseja realmente fechar o sistema ?", "Atenção!",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -122,7 +130,7 @@ namespace dotnet_library
             {
                 Menu menu = new Menu();
                 menu.Show();
-                
+
             }
         }
     }

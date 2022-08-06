@@ -50,19 +50,20 @@
             // lbLivros
             // 
             this.lbLivros.AutoSize = true;
-            this.lbLivros.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbLivros.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbLivros.ForeColor = System.Drawing.Color.White;
-            this.lbLivros.Location = new System.Drawing.Point(12, 9);
+            this.lbLivros.Location = new System.Drawing.Point(13, 9);
             this.lbLivros.Name = "lbLivros";
-            this.lbLivros.Size = new System.Drawing.Size(110, 19);
+            this.lbLivros.Size = new System.Drawing.Size(182, 15);
             this.lbLivros.TabIndex = 1;
-            this.lbLivros.Text = "DISPONÍVEIS:";
+            this.lbLivros.Text = "LISTA DE LIVROS DISPONÍVEIS:";
             // 
             // bntEmprestar
             // 
+            this.bntEmprestar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntEmprestar.Location = new System.Drawing.Point(12, 327);
             this.bntEmprestar.Name = "bntEmprestar";
-            this.bntEmprestar.Size = new System.Drawing.Size(102, 32);
+            this.bntEmprestar.Size = new System.Drawing.Size(123, 32);
             this.bntEmprestar.TabIndex = 2;
             this.bntEmprestar.Text = "Emprestar";
             this.bntEmprestar.UseVisualStyleBackColor = true;
@@ -78,10 +79,13 @@
             this.Controls.Add(this.lbLivros);
             this.Controls.Add(this.dgvLivros);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LivrosDisponíveis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Livros Disponíveis";
+            this.Text = "Livros disponíveis";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LivrosDisponíveis_FormClosed);
             this.Load += new System.EventHandler(this.Emprestimos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLivros)).EndInit();

@@ -128,7 +128,7 @@ namespace dotnet_library.Conexao.Usuario
                 mysql.Open();
                 MySqlCommand comando = new MySqlCommand(query, mysql);
                 comando.ExecuteNonQuery();
-                MessageBox.Show($"Senha Alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Não se esqueça de anota-la em algum lugar.", "Sua senha foi alterada com sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception)

@@ -53,6 +53,7 @@ namespace dotnet_library
             // btnCadastrarLivro
             // 
             this.btnCadastrarLivro.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCadastrarLivro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrarLivro.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCadastrarLivro.Location = new System.Drawing.Point(12, 116);
             this.btnCadastrarLivro.Name = "btnCadastrarLivro";
@@ -67,6 +68,7 @@ namespace dotnet_library
             // btnEmprestimos
             // 
             this.btnEmprestimos.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnEmprestimos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEmprestimos.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnEmprestimos.Location = new System.Drawing.Point(12, 164);
             this.btnEmprestimos.Name = "btnEmprestimos";
@@ -81,6 +83,7 @@ namespace dotnet_library
             // btnCadastroCliente
             // 
             this.btnCadastroCliente.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCadastroCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroCliente.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCadastroCliente.Location = new System.Drawing.Point(12, 69);
             this.btnCadastroCliente.Name = "btnCadastroCliente";
@@ -95,6 +98,7 @@ namespace dotnet_library
             // btnCadastroUsuario
             // 
             this.btnCadastroUsuario.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnCadastroUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastroUsuario.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCadastroUsuario.Location = new System.Drawing.Point(12, 21);
             this.btnCadastroUsuario.Name = "btnCadastroUsuario";
@@ -109,6 +113,7 @@ namespace dotnet_library
             // btnLogout
             // 
             this.btnLogout.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.Location = new System.Drawing.Point(12, 211);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(128, 31);
@@ -132,8 +137,10 @@ namespace dotnet_library
             this.Controls.Add(this.btnCadastrarLivro);
             this.Controls.Add(this.btnEmprestimos);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dotnet Library";

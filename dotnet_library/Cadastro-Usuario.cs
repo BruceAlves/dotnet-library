@@ -57,7 +57,7 @@ namespace dotnet_library
             if (nomeVazio || emailVazio || senhaVazio)
             {
                 MessageBox.Show($@"Um ou mais campos não foram preenchidos!", "O cadastro não pôde ser realizado!",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

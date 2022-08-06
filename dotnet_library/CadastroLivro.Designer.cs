@@ -49,15 +49,15 @@ namespace dotnet_library
             this.cbxGenero.Location = new System.Drawing.Point(12, 86);
             this.cbxGenero.Name = "cbxGenero";
             this.cbxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cbxGenero.Size = new System.Drawing.Size(197, 23);
+            this.cbxGenero.Size = new System.Drawing.Size(245, 23);
             this.cbxGenero.TabIndex = 0;
-           
             // 
             // btnCadastrarLivro
             // 
-            this.btnCadastrarLivro.Location = new System.Drawing.Point(279, 131);
+            this.btnCadastrarLivro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCadastrarLivro.Location = new System.Drawing.Point(13, 131);
             this.btnCadastrarLivro.Name = "btnCadastrarLivro";
-            this.btnCadastrarLivro.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarLivro.Size = new System.Drawing.Size(109, 33);
             this.btnCadastrarLivro.TabIndex = 1;
             this.btnCadastrarLivro.Text = "Cadastrar";
             this.btnCadastrarLivro.UseVisualStyleBackColor = true;
@@ -65,9 +65,10 @@ namespace dotnet_library
             // 
             // btnCancelarCadastroLivro
             // 
-            this.btnCancelarCadastroLivro.Location = new System.Drawing.Point(360, 131);
+            this.btnCancelarCadastroLivro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelarCadastroLivro.Location = new System.Drawing.Point(372, 131);
             this.btnCancelarCadastroLivro.Name = "btnCancelarCadastroLivro";
-            this.btnCancelarCadastroLivro.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelarCadastroLivro.Size = new System.Drawing.Size(111, 33);
             this.btnCancelarCadastroLivro.TabIndex = 2;
             this.btnCancelarCadastroLivro.Text = "Limpar";
             this.btnCancelarCadastroLivro.UseVisualStyleBackColor = true;
@@ -77,68 +78,72 @@ namespace dotnet_library
             // 
             this.txtNomeLivro.Location = new System.Drawing.Point(12, 39);
             this.txtNomeLivro.Name = "txtNomeLivro";
-            this.txtNomeLivro.Size = new System.Drawing.Size(197, 23);
+            this.txtNomeLivro.Size = new System.Drawing.Size(245, 23);
             this.txtNomeLivro.TabIndex = 3;
             this.txtNomeLivro.Enter += new System.EventHandler(this.txtNomeLivro_Enter);
             // 
             // txtSinopse
             // 
-            this.txtSinopse.Location = new System.Drawing.Point(238, 86);
+            this.txtSinopse.Location = new System.Drawing.Point(263, 86);
             this.txtSinopse.Name = "txtSinopse";
-            this.txtSinopse.Size = new System.Drawing.Size(197, 23);
+            this.txtSinopse.Size = new System.Drawing.Size(220, 23);
             this.txtSinopse.TabIndex = 6;
             this.txtSinopse.Enter += new System.EventHandler(this.txtSinopse_Enter);
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(238, 39);
+            this.txtAutor.Location = new System.Drawing.Point(263, 39);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(197, 23);
+            this.txtAutor.Size = new System.Drawing.Size(220, 23);
             this.txtAutor.TabIndex = 5;
             this.txtAutor.Enter += new System.EventHandler(this.txtAutor_Enter);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(13, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 15);
+            this.label1.Size = new System.Drawing.Size(36, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Livro";
+            this.label1.Text = "Livro:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(238, 21);
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(263, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Autor";
+            this.label2.Text = "Autor:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Location = new System.Drawing.Point(13, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 15);
+            this.label3.Size = new System.Drawing.Size(48, 15);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Gênero";
+            this.label3.Text = "Gênero:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(238, 68);
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.Location = new System.Drawing.Point(263, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 15);
+            this.label4.Size = new System.Drawing.Size(51, 15);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Sinopse";
+            this.label4.Text = "Sinopse:";
             // 
             // CadastroLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(456, 169);
+            this.ClientSize = new System.Drawing.Size(522, 194);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,10 +154,13 @@ namespace dotnet_library
             this.Controls.Add(this.cbxGenero);
             this.Controls.Add(this.txtAutor);
             this.Controls.Add(this.txtNomeLivro);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CadastroLivro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CadastroLivro";
+            this.Text = "Cadastrar  livro";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CadastroLivro_FormClosed);
             this.Load += new System.EventHandler(this.CadastroLivro_Load);
             this.ResumeLayout(false);
