@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {}
+    "C:\\Users\\User\\source\\repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {
+    "C:\\Users\\User\\source\\repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
         "projectName": "dotnet_library",
-        "projectPath": "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
-        "packagesPath": "C:\\Users\\Marcio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcio\\Source\\Repos\\dotnet-library\\dotnet_library\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\dotnet-library\\dotnet_library\\dotnet_library.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\dotnet-library\\dotnet_library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Marcio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
-﻿using dotnet_library.Conexao.Usuario;
+﻿using dotnet_library.Conexao.Livros;
+using dotnet_library.Conexao.Usuario;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace dotnet_library
 {
     public partial class Recuperacao_Senha : Form
     {
+
         public Recuperacao_Senha()
         {
             InitializeComponent();
@@ -28,7 +30,8 @@ namespace dotnet_library
             bool resultado = usuario.VerificarEmailUsuario(txtEmailValidacao.Text);
 
             Guid guid = Guid.NewGuid();
-            string senhaTemporaria = guid.ToString().ToUpper().Substring(0, 4);
+            SessaoUsuario.CodigoRecuperacao = guid.ToString().ToUpper().Substring(0, 4);
+            SessaoUsuario.Email = txtEmailValidacao.Text;
 
             string emailRemetente = ConfigurationManager.AppSettings["emailfrom"]!;
             string senhaEmail = ConfigurationManager.AppSettings["senhaEmail"]!;
@@ -91,7 +94,7 @@ namespace dotnet_library
                 CÓDIGO: 
             </p>
             <h2>
-               " + senhaTemporaria + @" 
+               " + SessaoUsuario.CodigoRecuperacao + @" 
             </h2>
         </div>
     </div>
@@ -103,12 +106,20 @@ namespace dotnet_library
                     SmtpServer.Credentials = new NetworkCredential(emailRemetente, senhaEmail);
                     SmtpServer.EnableSsl = true;
                     SmtpServer.Send(mail);
+
+                    MessageBox.Show("Código de verificação foi enviado para o email informado, confira sua caixa de spam!","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Dispose();
+
+                    Recuperar_Senha recuperar_Senha = new Recuperar_Senha();
+                    recuperar_Senha.ShowDialog();
+
+                    
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
-                MessageBox.Show("Email Enviado!");
+                
             }
             else
             {

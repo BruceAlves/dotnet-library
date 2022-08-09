@@ -14,6 +14,8 @@ namespace dotnet_library.Conexao.Usuario
         bool VerificarEmailUsuario(string email);
 
         bool VerificaLogin(string email, string senha);
+
+        void CriarNovaSenha(string email, string novaSenha);
      
 
 

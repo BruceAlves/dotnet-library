@@ -70,7 +70,7 @@ namespace dotnet_library
             }
             else
             {
-                MessageBox.Show("Campos não preenchidos!");
+                MessageBox.Show("Preencha todos os campos!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             

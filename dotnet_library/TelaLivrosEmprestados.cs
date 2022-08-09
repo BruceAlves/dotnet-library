@@ -44,19 +44,27 @@ namespace dotnet_library
             resposta = MessageBox.Show($@"Deseja realmente devolver o livro?", "ATENÇÃO!",
                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            livro.DevolverLivro(id);
+            
 
             if (resposta == DialogResult.Yes)
             {
-                Tela_Auxiliar_Emprestimo tela_Auxiliar_Emprestimo = new Tela_Auxiliar_Emprestimo();
-
-                tela_Auxiliar_Emprestimo.Show();
+                livro.DevolverLivro(id);
 
                 this.Dispose();
+
+                TelaLivrosEmprestados telaLivrosEmprestados = new TelaLivrosEmprestados();
+
+                telaLivrosEmprestados.ShowDialog();
+
+              
             }
             else
             {
+                this.Dispose();
 
+                TelaLivrosEmprestados telaLivrosEmprestados = new TelaLivrosEmprestados();
+                telaLivrosEmprestados.ShowDialog();
+                
             }
 
         }

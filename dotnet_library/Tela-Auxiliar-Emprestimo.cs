@@ -17,15 +17,6 @@ namespace dotnet_library
             InitializeComponent();
         }
 
-        private void bntFechar_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            Menu menu = new Menu();
-            menu.ShowDialog();
-        }
-
-       
-
         private void bntLivrosEmprestados_Click(object sender, EventArgs e)
         {
             this.Dispose();

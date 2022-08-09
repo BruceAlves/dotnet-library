@@ -171,6 +171,7 @@
             // 
             // bntCadastrar
             // 
+            this.bntCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntCadastrar.Location = new System.Drawing.Point(33, 185);
             this.bntCadastrar.Name = "bntCadastrar";
             this.bntCadastrar.Size = new System.Drawing.Size(97, 31);
@@ -181,6 +182,7 @@
             // 
             // bntLimpar
             // 
+            this.bntLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntLimpar.Location = new System.Drawing.Point(433, 185);
             this.bntLimpar.Name = "bntLimpar";
             this.bntLimpar.Size = new System.Drawing.Size(110, 31);
@@ -210,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.ClientSize = new System.Drawing.Size(566, 266);
+            this.ClientSize = new System.Drawing.Size(573, 266);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.bntLimpar);
@@ -229,10 +231,13 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Cadastro_Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro_Cliente";
+            this.Text = "Cadastrar cliente";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastro_Cliente_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();

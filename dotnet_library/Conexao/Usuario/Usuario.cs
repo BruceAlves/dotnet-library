@@ -13,6 +13,7 @@ namespace dotnet_library.Conexao.Usuario
 {
     public class Usuario : IUsuario
     {
+        
 
         private readonly string conexao = ConfigurationManager.ConnectionStrings["dev"].ConnectionString;
 
@@ -112,9 +113,33 @@ namespace dotnet_library.Conexao.Usuario
             return usuarioValido;
         }
 
-       
-
-
         
+
+        public void CriarNovaSenha(string email, string novaSenha)
+        {           
+
+            string query = $@"update dotnet_library.tb_usuario set senha = {novaSenha} 
+             where email = '{email}';";
+
+            MySqlConnection mysql = new MySqlConnection(conexao);
+
+            try
+            {
+                mysql.Open();
+                MySqlCommand comando = new MySqlCommand(query, mysql);
+                comando.ExecuteNonQuery();
+                MessageBox.Show($"Não se esqueça de anota-la em algum lugar.", "Sua senha foi alterada com sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro de conexão com o Banco de dados", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                mysql.Close();
+            }
+        }
     }
 }

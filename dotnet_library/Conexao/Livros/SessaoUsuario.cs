@@ -12,5 +12,6 @@ namespace dotnet_library.Conexao.Livros
         public static string? Nome { get; set; }
         public static string? Email { get; set; }
         public static string? Senha { get; set; }
+        public static string? CodigoRecuperacao { get; set; }
     }
 }
