@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace dotnet_library.Utilitarios
 {
-    internal interface IviaCep
+    internal interface IViaCep
     {
         EnderecoViaCep? EnderecoViaCep(string cep);
+
+        bool ValidarCep(string cep);
+
+        bool ValidarNumero(string numero);
     }
 }

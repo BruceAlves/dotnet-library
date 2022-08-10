@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace dotnet_library.Utilitarios
 {
-    internal class ViaCep : IviaCep
+    internal class ViaCep : IViaCep
     {
 
         public EnderecoViaCep? EnderecoViaCep(string cep)
@@ -26,6 +27,19 @@ namespace dotnet_library.Utilitarios
 
             return resposta ;
             
+        }
+
+        public bool ValidarCep(string cep)
+        {
+            var regex = new Regex(@"^\d{8}");
+
+            return regex.IsMatch(cep);
+        }
+
+        public bool ValidarNumero(string numero)
+        {
+            var regex = new Regex (@"^[a - zA - Z] +$");
+            return regex.IsMatch(numero);
         }
     }
 }

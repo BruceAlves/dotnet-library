@@ -44,7 +44,6 @@
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.bntCadastrar = new System.Windows.Forms.Button();
-            this.bntLimpar = new System.Windows.Forms.Button();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.lb = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -93,6 +92,7 @@
             // 
             // txtRua
             // 
+            this.txtRua.Enabled = false;
             this.txtRua.Location = new System.Drawing.Point(280, 46);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(179, 23);
@@ -100,6 +100,7 @@
             // 
             // txtBairro
             // 
+            this.txtBairro.Enabled = false;
             this.txtBairro.Location = new System.Drawing.Point(280, 99);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(263, 23);
@@ -164,6 +165,7 @@
             // 
             // txtEstado
             // 
+            this.txtEstado.Enabled = false;
             this.txtEstado.Location = new System.Drawing.Point(280, 148);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(123, 23);
@@ -172,7 +174,7 @@
             // bntCadastrar
             // 
             this.bntCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntCadastrar.Location = new System.Drawing.Point(33, 185);
+            this.bntCadastrar.Location = new System.Drawing.Point(230, 190);
             this.bntCadastrar.Name = "bntCadastrar";
             this.bntCadastrar.Size = new System.Drawing.Size(97, 31);
             this.bntCadastrar.TabIndex = 14;
@@ -180,18 +182,9 @@
             this.bntCadastrar.UseVisualStyleBackColor = true;
             this.bntCadastrar.Click += new System.EventHandler(this.bntCadastrar_Click);
             // 
-            // bntLimpar
-            // 
-            this.bntLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntLimpar.Location = new System.Drawing.Point(433, 185);
-            this.bntLimpar.Name = "bntLimpar";
-            this.bntLimpar.Size = new System.Drawing.Size(110, 31);
-            this.bntLimpar.TabIndex = 15;
-            this.bntLimpar.Text = "Limpar";
-            this.bntLimpar.UseVisualStyleBackColor = true;
-            // 
             // txtCidade
             // 
+            this.txtCidade.Enabled = false;
             this.txtCidade.Location = new System.Drawing.Point(409, 148);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(134, 23);
@@ -215,7 +208,6 @@
             this.ClientSize = new System.Drawing.Size(573, 266);
             this.Controls.Add(this.lb);
             this.Controls.Add(this.txtCidade);
-            this.Controls.Add(this.bntLimpar);
             this.Controls.Add(this.bntCadastrar);
             this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtNumero);
@@ -261,7 +253,6 @@
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Button bntCadastrar;
-        private System.Windows.Forms.Button bntLimpar;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lb;
     }
